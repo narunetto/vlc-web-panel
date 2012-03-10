@@ -19,20 +19,9 @@ $status = (bool) $STH->fetchColumn(0);
 		<script src="javascripts/scriptaculous.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<header id="top-grey-bar">
-			<div id="header-text">
-				<?php include_once("./inc/header.inc"); ?>
-				<div style="float:right;"><a href="http://<?php print $url_hostname; ?>/vlcweb/logout.php">Log Out</a>
-			</div>
-		</header>
+<?php include_once('../inc/header.inc'); ?>
 
-		<header id="top-grey-head">
-			<div id="top-grey-wrap">
-				<div id="top-grey-logo" style="margin-top: 5px;">
-					<a href="http://<?php print $url_hostname; ?>/vlcweb/panel.php"><img src="http://<?php print $url_hostname; ?>/vlcweb/logo.png" /></a>
-				</div>
-			</div>
-		</header>
+<?php include_once('../inc/header_grey.inc'); ?>
 
 		<div id="top-yellow-alert">
 			<strong>protip:</strong> New Feature! You can now stream the entirety of a folder! Just add an asterisk to the end of the path. (Example: /home/ass/*)

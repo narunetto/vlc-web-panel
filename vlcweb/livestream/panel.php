@@ -17,20 +17,9 @@ $status = (bool) $STH->fetchColumn(0);
 		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
-		<header id="top-grey-bar">
-			<div id="header-text">
-				<?php include("../inc/header.inc"); ?>
-				<div style="float:right;"><a href="http://<?php print $url_hostname; ?>/vlcweb/livestream/logout.php">Log Out</a>
-			</div>
-		</header>
+<?php include_once('../inc/header.inc'); ?>
 
-		<header id="top-grey-head">
-			<div id="top-grey-wrap">
-				<div id="top-grey-logo" style="margin-top: 5px;">
-					<a href="http://<?php print $url_hostname; ?>/vlcweb/livestream/panel.php"><img src="http://<?php print $url_hostname; ?>/vlcweb/logo.png" /></a>
-				</div>
-			</div>
-		</header>
+<?php include_once('../inc/header_grey.inc'); ?>
 <?php
 // if it is, spit out the page.
 if ($status) {

@@ -9,19 +9,9 @@ include_once('../inc/config.inc');
 		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
-		<header id="top-grey-bar">
-			<div id="header-text">
-				<strong><em>That piss BETTER NOT BOUNCE or you're a DEAD MOTHER FUCKER.</em></strong>
-			</div>
-		</header>
+<?php include_once('../inc/header.inc'); ?>
 
-		<header id="top-grey-head">
-			<div id="top-grey-wrap">
-				<div id="top-grey-logo" style="margin-top: 5px;">
-					<a href="http://<?php print $url_hostname; ?>/vlcweb/panel.php"><img src="http://<?php print $url_hostname; ?>/vlcweb/logo.png" /></a>
-				</div>
-			</div>
-		</header>
+<?php include_once('../inc/header_grey.inc'); ?>
 
 		<div id="main-wrapper">
 <?php

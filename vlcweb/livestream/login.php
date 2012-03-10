@@ -9,19 +9,10 @@ include_once('../inc/config.inc');
 		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
-		<header id="top-grey-bar">
-			<div id="header-text">
-				<?php include("../inc/header.inc"); ?>
-			</div>
-		</header>
+<?php include_once('../inc/header.inc'); ?>
 
-		<header id="top-grey-head">
-			<div id="top-grey-wrap">
-				<div id="top-grey-logo" style="margin-top: 5px;">
-					<a href="http://<?php print $url_hostname; ?>/vlcweb/livestream/panel.php"><img src="http://<?php print $url_hostname; ?>/vlcweb/logo.png" /></a>
-				</div>
-			</div>
-		</header>
+<?php include_once('../inc/header_grey.inc'); ?>
+
 		<div id="main-wrapper">
 <?php
 include_once('../inc/msql_connect.php');

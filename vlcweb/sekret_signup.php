@@ -18,7 +18,7 @@ if(!isset($_POST['submit'])) {
 	$password = $_POST['password'];
 	$signuppassword = $_POST['signuppassword'];
 	
-	if ($signuppassword == "niggerdick2003") {
+	if ($signuppassword == "*") {
 		$data = array( 'username' => $username, 'password' => md5($password) );
 
 		$STH = $DBH->prepare("INSERT INTO users (username, password) value (:username, :password)");
