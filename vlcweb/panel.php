@@ -14,14 +14,14 @@ $status = (bool) $STH->fetchColumn(0);
 	<head>
 		<meta charset="utf-8" />
 		<title>vlc web interface | File Streaming</title>
-		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 		<script src="javascripts/prototype.js" type="text/javascript"></script>
 		<script src="javascripts/scriptaculous.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header id="top-grey-bar">
 			<div id="header-text">
-				<?php include("./inc/header.inc"); ?>
+				<?php include_once("./inc/header.inc"); ?>
 				<div style="float:right;"><a href="http://<?php print $url_hostname; ?>/vlcweb/logout.php">Log Out</a>
 			</div>
 		</header>

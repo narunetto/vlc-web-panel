@@ -6,7 +6,7 @@ include_once('./inc/config.inc');
 	<head>
 		<meta charset="utf-8" />
 		<title>VLC Streaming Heener</title>
-		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
 		<header id="top-grey-bar">

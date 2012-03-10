@@ -7,7 +7,7 @@ include_once('./inc/msql_connect.php');
 	<head>
 		<meta charset="utf-8" />
 		<title>vlc web interface | Live Streaming</title>
-		<link rel="stylesheet" href="http://<?php print $url_hostname; ?>/vlcweb/style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
 		<header id="top-grey-bar">

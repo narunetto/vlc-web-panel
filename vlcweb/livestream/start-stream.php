@@ -6,7 +6,7 @@ include_once('../inc/config.inc');
 	<head>
 		<meta charset="utf-8" />
 		<title>vlc web interface | Stream Started</title>
-		<link rel="stylesheet" href="http://<?php print $url_hostname; ?>/vlcweb/style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
 		<header id="top-grey-bar">
@@ -25,8 +25,6 @@ include_once('../inc/config.inc');
 
 		<div id="main-wrapper">
 		<?php
-		error_reporting(1); // this is here because php is a black jew and likes to throw warnings at shit
-		
 		// define shit
 		$host = $_POST['host'];
 		$port = $_POST['port'];
