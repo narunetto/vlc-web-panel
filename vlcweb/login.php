@@ -45,7 +45,7 @@ if(!isset($_POST['username'])) {
 		
 		setcookie("user", $_POST['username']);
 		setcookie("sessionid", $sessionid);
-		header("Location: http://$url_hostname/vlcweb/panel.php");
+		header("Location: ".$fullurl_hostname."panel.php");
 	} else {
 		echo '<span class="error">Your login was unsuccessful.</span> <p>Please <a href="login.php">try</a> again.';
 	}

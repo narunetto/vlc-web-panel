@@ -45,7 +45,7 @@ if(!isset($_POST['username'])) {
 		
 		setcookie("user", $_POST['username']);
 		setcookie("sessionid", $sessionid);
-		header("Location: http://imcumm.in/vlcweb/livestream/panel.php");
+		header("Location: ".$fullurl_hostname."livestream/panel.php");
 	} else {
 		echo '<span class="error">Your login was unsuccessful.</span> <p>Please <a href="login.php">try</a> again.';
 	}
