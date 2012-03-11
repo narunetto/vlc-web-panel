@@ -10,9 +10,9 @@ include_once('./inc/msql_connect.php');
 		<link rel="stylesheet" href="<?php print $stylesheet_url; ?>" type="text/css" />
 	</head>
 	<body>
-<?php include_once('../inc/header.inc'); ?>
+<?php include_once('./inc/header.inc'); ?>
 
-<?php include_once('../inc/header_grey.inc'); ?>
+<?php include_once('./inc/header_grey.inc'); ?>
 
 		<div id="main-wrapper">
 <?php
